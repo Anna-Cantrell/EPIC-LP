@@ -1,1 +1,162 @@
-body{margin:0}
+/* Small devices (tablets, 768px and up) */
+
+/* Medium devices (desktops, 992px and up) */
+
+/* Large devices (large desktops, 1200px and up) */
+
+
+body { 
+    margin: 0;
+    font-size: 16px;
+    font-family: "museo-sans", "roboto", 'helvetica', 'arial', sans-serif !important;
+    background-color: rgba(35, 35, 35, 1) !important;
+}
+body h1, p, div {
+    color: white;
+    font-size: 16px;
+}
+
+.var-color {
+    color: #C7161E;
+}
+
+.landing-container {
+    background-color: rgba(35, 35, 35, 1);
+    height: 100vh;
+}
+
+.title-row {
+    margin-top: 92px;
+}
+.title-holder h1::before {
+    width: 0;
+    height: 0;
+    border-left: 55px solid white;
+    border-right: 55px solid white;
+    border-top: 110px solid white;
+    position: absolute;
+    content: "";
+    top: 40px;
+    left: 0px;
+}
+.title-holder h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 8.75em;
+    padding-left: 100px;
+    margin-bottom: 0px;
+}
+
+
+
+/* DATE HOLDER */
+.date-holder {
+    text-transform: uppercase;
+    font-size: 2.125em;
+    font-weight: 100;
+    margin-top: -20px;
+}
+
+
+
+/* BODY COPY */
+.copy-holder {
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-top: 32px;
+}
+
+
+
+/* BUTTON */
+.row-button {
+    margin-top: 65px;
+}
+
+.CTA {
+    background-color: #139DEA;
+    border: none;
+    border-radius: 1px;
+    width: 100%;
+    padding: 12px;
+    text-transform: uppercase;
+}
+.CTA:hover {
+    background-color: #00AAEE;
+    cursor: pointer;
+}
+
+
+
+/* LOCATION */
+.row-location {
+    text-align: right;
+    margin-top: 10px;
+}
+.location-holder {
+    font-weight: 100;
+    font-size: .85em;
+}
+
+
+
+
+
+/* small and below */
+@media screen and (max-width: 992px) {
+    
+    .title-holder h1::before {
+    top: 20px;
+    left: 0px;
+    } 
+    .date-holder {
+    text-align: right;
+    }
+    .title-holder h1::before {
+    top: 20px;
+    left: 0px;
+    } 
+}
+
+@media screen and (max-width: 500px) {
+    .title-row {
+        margin-top: 0px;
+    }
+    .title-holder h1::before {
+        width: 0;
+        height: 0;
+        border-left: 0px;
+        border-right: 0px;
+        border-top: 0px;
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0px;
+    }
+    .title-holder h1 {
+        font-size: 7em;
+        padding-left: 0px;
+        line-height: .9em;
+    }
+    .date-holder {
+        text-transform: uppercase;
+        font-size: 2.125em;
+        font-weight: 100;
+        margin-top: -5px;
+    }
+    .row-button {
+        margin-top: 35px;
+    }
+   
+}
+@media screen and (max-width: 350px) {
+    .copy-holder {
+        font-size: 1em;
+        font-weight: 300;
+        margin-top: 32px;
+    }
+    .location-holder {
+        font-weight: 100;
+        font-size: .8em;
+    }
+}

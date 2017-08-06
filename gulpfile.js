@@ -15,17 +15,19 @@ var imagemin = require('gulp-imagemin');
 var jshint = require('gulp-jshint');
 var browserSync = require('browser-sync').create();
 var del = require('del');
+var postcss = require('gulp-postcss');
+var cssnext = require('postcss-cssnext');
 
 // Task to Process Styles
 gulp.task('styles', function(){
-  return gulp.src('src/scss/**/*.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(gulp.dest('src/css'))
+  return gulp.src('src/css/*.css')
+    .pipe(postcss(cssnext))
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.reload({
       stream: true
     }))
 });
+
 
 // Task to Process HTML
 gulp.task('html', function(){
@@ -72,7 +74,7 @@ gulp.task('browserSync', function() {
 
 // Setup Watch Task
 gulp.task('watch', ['browserSync', 'styles', 'html', 'lint', 'scripts', 'images'], function (){
-  gulp.watch('src/scss/**/*.scss', ['styles']);
+  gulp.watch('src/css/*.css', ['styles']);
   gulp.watch('src/*.html', ['html', browserSync.reload]);
   gulp.watch('src/js/**/*.js', ['scripts', browserSync.reload]);
   gulp.watch('src/img/**/*.+(png|jpg|jpeg|gif|svg)', ['images', browserSync.reload]);

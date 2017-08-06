@@ -9,6 +9,11 @@
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/main.css">
       
+      <script
+  src="http://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+      
       <!-- bootstrap css and js -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -51,7 +56,7 @@
           <!-- MAIN CTA -->
         <div class="row row-button">
             <div class="col-sm-4 col-md-4 col-lg-4 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
-                <button class="button CTA">
+                <button id="cta" class="button CTA">
                     guarantee your spot
                 </button>
             </div>
@@ -67,8 +72,16 @@
         </div>
           
           <!-- MENU FORM -->
-          <div class="row row-form">
-              <div class="toggle"></div>
+          <div id="form-holder" class="row-form">
+              
+              <div class="toggle" id="toggle">
+                  <div id="menuCircle" class="toggle-circle">
+                      <div id="line1" class="toggle-line1"></div>
+                      <div id="line2" class="toggle-line2"></div>
+                      <div id="line3" class="toggle-line3"></div>
+                  </div>
+              </div>
+              
               <div class="form-holder">
                   
                   <div class="intro-text-holder">
@@ -77,14 +90,14 @@
                   </div>
                   
                   <form action="/action_page.php">
-                        First name:<br>
-                        <input type="text" name="firstname" value="full name">
-                        <br>
-                        Last name:<br>
-                        <input type="text" name="lastname" value="email address">
-                        <br><br>
+                      <br>
+                        <input required='' type='text' />
+                        <label alt='full name' placeholder='full name'></label>
+                        <input required='' type='text' />
+                        <label alt='email address' placeholder='email address'></label>
                         <input type="submit" value="guarantee your spot!">
                    </form> 
+                  
                   
                   <div class="sub-cta-holder">
                       <div class="epic-link-holder">
@@ -93,7 +106,7 @@
                       </div>
                       
                       <div class="fb-share-holder">
-                          <div class="share-logo"></div>
+                          <div class="share-logo">share</div>
                           <div class="fb-copy">Gaming is more fun with friends. Click here to share on Facebook!</div>
                       </div>
                   </div>

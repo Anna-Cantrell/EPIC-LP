@@ -102,6 +102,245 @@ body h1, p, div {
 
 
 
+
+
+
+/* FORM CONTAINER */
+
+.row-form {
+    position: fixed;
+    top: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    right: -340px;
+}
+.form-open {
+    right: 0;
+}
+.form-holder {
+    display: inline-block;
+    vertical-align: top;
+    height: 100vh;
+    width: 340px;
+    background-color: #139DEA;
+    padding: 30px;
+    padding-top: 60px;
+}
+.intro-text-holder {
+    text-align: center;
+}
+.intro-primary {
+    font-weight: 700;
+    font-size: 1.3em;
+}
+.intro-secondary {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.3em;
+    margin: 25px 0px;
+}
+
+
+/* ACTUAL FORM */ 
+form {
+    background-color: #139DEA;
+    color: white;
+}
+form label {
+    color: ;
+}
+
+input[type="text"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    height: 4em;
+    height: 3em;
+    margin: 0 0 1em;
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 2px;
+    background: transparent;
+    resize: none;
+    outline: none;
+}
+input[type="text"][required]:focus {
+    border-color: #C7161E;
+}
+input[type="text"][required]:focus + label[placeholder]::before {
+    color: #C7161E;
+}
+input[type="text"][required]:focus + label[placeholder]::before, input[type="text"][required]:valid + label[placeholder]::before {
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transform: translate(0, -1.55em) scale(0.9, 0.9);
+    transform: translate(0, -1.55em) scale(0.9, 0.9);
+    font-weight: 500;
+    font-style: normal;
+}
+input[type="text"][required]:invalid + label[placeholder][alt]:before {
+    content: attr(alt);
+}
+input[type="text"][required] + label[placeholder] {
+    display: block;
+    pointer-events: none;
+    line-height: 1em;
+    margin-top: calc(-3em - 2px);
+    margin-bottom: calc(2em + 2px);
+}
+input[type="text"][required] + label[placeholder]::before {
+    content: attr(placeholder);
+    display: inline-block;
+    margin: 0 calc(1em + 2px);
+    margin-top: 2px;
+    padding: 0 2px;
+    color: white;
+    white-space: nowrap;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#139DEA), to(#139DEA));
+    background-image: linear-gradient(to bottom, #139DEA, #139DEA);
+    background-size: 100% 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-top: 10px;
+    background: #C7161E;
+}
+input[type="submit"]:hover {
+    background: #CD3328;
+}
+
+.sub-cta-holder {
+    margin-top: 25px;
+}
+.epic-link-holder, .fb-share-holder {
+    display: inline-block;
+    width: 46%;
+    vertical-align: top;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.epic-link-holder {
+    float: left;
+}
+.fortnite-logo {
+    background: url('../img/fortnite.png') no-repeat center top;
+    background-size: contain;
+    height: 65px;
+    margin-bottom: 10px;
+}
+.epic-link-copy, .fb-copy {
+    font-size: .75em;
+    font-weight: 700;
+}
+
+
+.fb-share-holder {
+    float: right;
+}
+.share-logo::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    float: left;
+    background-image: url('../img/facebook-3-xxl.png');
+    background-size: contain;
+    height: 23px;
+    width: 23px;
+    left: 6px;
+    top: 6px;
+    
+}
+.share-logo {
+    background-color: #2C4688;
+    height: 35px;
+    border-radius: 2px;
+    line-height: 35px;
+    margin: 20px 0;
+}
+
+
+
+/* TOGGLE */
+
+.toggle {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+.toggle:hover {
+    cursor: pointer;
+}
+.toggle-circle {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: 50px;
+    margin-right: 30px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.toggle-line1, .toggle-line2, .toggle-line3 {
+    height: 1px;
+    width: 25px;
+    background-color: white;
+    margin-top: 7.5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.toggle-line1 {
+    margin-left: 35%;
+}
+.toggle-line2 {
+    margin-left: 52%;
+}
+.toggle-line3 {
+    margin-left: 30%;
+}
+
+.toggle-line1-active {
+    margin-left: -20%;
+    background-color: #139DEA;
+}
+.toggle-line2-active {
+    margin-left: -40%;
+    background-color: #139DEA;
+}
+.toggle-line3-active {
+    margin-left: -15%;
+    background-color: #139DEA;
+}
+.toggle-circle-active {
+    border-color: #139DEA;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
 /* small and below */
 @media screen and (max-width: 992px) {
     

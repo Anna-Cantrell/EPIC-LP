@@ -32,6 +32,24 @@ $('#toggle').click(function() {
         $('#line2').removeClass('toggle-line2-active');
         $('#line3').removeClass('toggle-line3-active');
     }
-})
+});
+
+
+$(".selector").mouseenter(function(e) {
+  $(this).css('opacity','1');
+});
+$(".selector").mouseleave(function(e) {
+  $(this).css('opacity','.3');
+  $('#info-box').html($(this).data('info'));
+});
+
+$(".selector").click(function() {
+    var info = this.id + '1';
+    $('.info-body').removeClass('info-active');
+    $('.' + info).addClass('info-active');
+    $(".selector").removeClass('room-active');
+    $(this).addClass('room-active');
+//    alert(info);
+});
 
 

@@ -121,6 +121,7 @@ body h1, p, div {
     top: 0;
     transition: all 0.3s ease-in-out;
     right: -340px;
+    z-index: 100;
 }
 .form-open {
     right: 0;
@@ -350,6 +351,60 @@ input[type="submit"]:hover {
 
 
 
+
+/* !!!!! LOWER PAGE //// BELOW FOLD !!!!! */
+
+
+
+.sub-fluid {
+    background-color: rgba(25,25,25,1);
+}
+.lower-container {
+    background-color: rgba(25,25,25,1);
+    height: 100vh;
+}
+.sub-head-row {
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.sub-head {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 3.75em;
+}
+.info-head {
+    font-weight: 700;
+    color: var(--mainRed);
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.info-sub {
+    font-weight: 100;
+    font-style: italic;
+    font-size: 1.125em;
+}
+.info-body {
+    font-weight: 300;
+    font-size: 1.125em;
+}
+
+
+
+
+/* !!!!!!!!!!! SVG !!!!!!!!!!!!! */
+.info-body {
+    display: none;
+}
+.info-active {
+    display: block;
+}
+
+.selector {
+    opacity: .3;
+}
+.room-active {
+    opacity: 1 !important;
+}
 
 
 

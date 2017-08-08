@@ -509,9 +509,60 @@ input[type="submit"]:hover {
         margin-top: 35px;
     }
     .bg-images {
-    margin-left: -120px;
+        margin-left: -120px;
     }
-   
+    
+    
+    
+    
+    
+    
+    .row-form {
+        right: -100vw; /**/
+    }
+    .form-open {
+        right: 0;   /**/
+    }
+    .form-holder {
+        max-height: 100vh; /**/
+        width: 100vw;     /**/
+    }
+    .intro-primary {
+        font-size: 1.1em;  /**/
+    }
+    .intro-secondary {
+        font-size: 1.1em;   /**/
+        margin: 5px 0px;   /**/
+    }
+
+
+    /* ACTUAL FORM */ 
+
+    .sub-cta-holder {
+        margin-top: 20px;  /**/
+    }
+
+    /* TOGGLE */
+
+    .toggle {
+        position: absolute;    /**/
+        left: -55px;           /**/
+        top: -30px;            /**/
+    }
+
+    .toggle-line1-active {
+        background-color: white; /**/
+    }
+    .toggle-line2-active {
+        background-color: white; /**/
+    }
+    .toggle-line3-active {
+        background-color: white; /**/
+    }
+    .toggle-circle-active {
+        border-color: white;   /**/
+        margin-left: 75px;     /**/
+    }
 }
 /*Iphone SE */
 @media screen and (max-width: 350px) {

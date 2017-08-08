@@ -227,8 +227,6 @@ form label {
 }
 
 input[type="text"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 100%;
     height: -webkit-calc(4em);
@@ -248,10 +246,7 @@ input[type="text"][required]:focus + label[placeholder]::before {
     color: var(--mainRed);
 }
 input[type="text"][required]:focus + label[placeholder]::before, input[type="text"][required]:valid + label[placeholder]::before {
-    -webkit-transition-duration: .2s;
     transition-duration: .2s;
-    -webkit-transform: translate(0, -1.55em) scale(0.9, 0.9);
-    -ms-transform: translate(0, -1.55em) scale(0.9, 0.9);
     transform: translate(0, -1.55em) scale(0.9, 0.9);
     font-weight: 500;
     font-style: normal;
@@ -263,26 +258,19 @@ input[type="text"][required] + label[placeholder] {
     display: block;
     pointer-events: none;
     line-height: 1em;
-    margin-top: -webkit-calc(-3em - 2px);
     margin-top: calc(-3em - 2px);
-    margin-bottom: -webkit-calc((3em - 1em) + 2px);
     margin-bottom: calc((3em - 1em) + 2px);
 }
 input[type="text"][required] + label[placeholder]::before {
     content: attr(placeholder);
     display: inline-block;
-    margin: 0 -webkit-calc(1em + 2px);
     margin: 0 calc(1em + 2px);
     margin-top: 2px;
     padding: 0 2px;
     color: white;
     white-space: nowrap;
-    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--mainBlue)), to(var(--mainBlue)));
-    background-image: -webkit-linear-gradient(top, var(--mainBlue), var(--mainBlue));
     background-image: linear-gradient(to bottom, var(--mainBlue), var(--mainBlue));
-    -webkit-background-size: 100% 5px;
     background-size: 100% 5px;
     background-repeat: no-repeat;
     background-position: center;
@@ -438,6 +426,10 @@ input[type="submit"]:hover {
     text-transform: uppercase;
     font-size: 3.75em;
 }
+
+.info-head, .info-sub, .info-text {
+    margin-top: 15px;
+}
 .info-head {
     font-weight: 700;
     color: var(--mainRed);
@@ -447,7 +439,10 @@ input[type="submit"]:hover {
 .info-sub {
     font-weight: 100;
     font-style: italic;
-    font-size: 1.125em;
+    font-size: 1em;
+}
+.info-text {
+    font-weight: 500;
 }
 
 
@@ -510,8 +505,12 @@ input[type="submit"]:hover {
     .row-button {
         margin-top: 35px;
     }
+    .bg-images {
+    margin-left: -120px;
+    }
    
 }
+/*Iphone SE */
 @media screen and (max-width: 350px) {
     .copy-holder {
         font-size: 1em;
@@ -521,5 +520,8 @@ input[type="submit"]:hover {
     .location-holder {
         font-weight: 100;
         font-size: .8em;
+    }
+    .bg-images {
+    margin-left: -100px;
     }
 }

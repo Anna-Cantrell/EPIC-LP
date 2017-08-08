@@ -98,26 +98,30 @@
                       <div class="intro-secondary">This is one night only, don’t miss your opportunity!</div>
                   </div>
                   
-                  <form action="/action_page.php">
+                  <form method="post" action="/email.php">
                       <br>
-                        <input required='' type='text' />
+                        <input required='' type='text' name='name' />
                         <label alt='full name' placeholder='full name'></label>
-                        <input required='' type='text' />
+                        <input required='' type='text' name='contact' />
                         <label alt='email address' placeholder='email address'></label>
-                        <input type="submit" value="guarantee your spot!">
-                   </form> 
+                        <input type="submit" value="guarantee your spot!"> 
+                   </form>
                   
                   
                   <div class="sub-cta-holder">
-                      <div class="epic-link-holder">
-                          <div class="fortnite-logo"></div>
-                          <div class="epic-link-copy">Don’t come unprepared! Play EPIC games’ FORTNITE now!</div>
-                      </div>
+                      <a href="https://www.epicgames.com/fortnite/en-US/home" target="_blank">
+                          <div class="epic-link-holder">
+                              <div class="fortnite-logo"></div>
+                              <div class="epic-link-copy">Don’t come unprepared! Play EPIC games’ FORTNITE now!</div>
+                          </div> 
+                      </a>
                       
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//anna-cantrell.github.io/epic-lp/dist/" target="_blank">
                       <div class="fb-share-holder">
                           <div class="share-logo">share</div>
                           <div class="fb-copy">Gaming is more fun with friends. Click here to share on Facebook!</div>
                       </div>
+                      </a>
                   </div>
                   
                 
@@ -427,11 +431,39 @@
       
       </div> <!-- end lower-container -->
       </div> <!-- end sub-fluid -->
+      <div class="container-fluid footer-fluid">
+          <div class="container footer-container">
+              
+              <div class="row footer-row">
+                  <div class="col-sm-4 footer-cta">
+                      <button id="ctaFooter" class="button CTA">
+                        guarantee your spot
+                      </button>
+                  </div>
+                  
+                  <div class="col-xs-6 col-sm-4 footer-epic-foot">
+                      <a href="https://www.epicgames.com/fortnite/en-US/home" target="_blank">
+                          <div class="epic-link-holder-foot">
+                              <div class="fortnite-logo-foot"></div>
+                              <div class="epic-link-copy-foot">Don’t come unprepared! Play EPIC games’ FORTNITE now!</div>
+                          </div> 
+                      </a>
+                  </div>
+                  
+                  <div class="col-xs-6 col-sm-4 footer-fb">
+                      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//anna-cantrell.github.io/epic-lp/dist/" target="_blank">
+                      <div class="fb-share-holder-foot">
+                          <div class="share-logo-foot"><p>share</p></div>
+                          <div class="fb-copy-foot">Gaming is more fun with friends. Click here to share on Facebook!</div>
+                      </div>
+                      </a>
+                  </div>
+                  
+              </div> <!-- end row -->
+              
+          </div>
+      </div>
 
-      
-      
-      
-      
       
       
       

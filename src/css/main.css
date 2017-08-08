@@ -308,10 +308,15 @@ input[type="submit"]:hover {
     padding: 10px;
     text-align: center;
 }
+.epic-link-holder:hover, .fb-share-holder:hover {
+    background-color: rgba(255,255,255,0.1);
+}
 
 .epic-link-holder {
     float: left;
+    box-shadow: 0px 2px 5px rgba(45,45,45,.5);
 }
+
 .fortnite-logo {
     background: url('../img/fortnite.png') no-repeat center top;
     background-size: contain;
@@ -326,6 +331,7 @@ input[type="submit"]:hover {
 
 .fb-share-holder {
     float: right;
+    box-shadow: 0px 2px 5px rgba(45,45,45,.5);
 }
 .share-logo::before {
     content: '';
@@ -425,9 +431,10 @@ input[type="submit"]:hover {
     margin-bottom: 50px;
 }
 .sub-head {
-    font-weight: 500;
+    font-weight: 900;
     text-transform: uppercase;
     font-size: 3.75em;
+    line-height: 1.1em;
 }
 
 .info-head, .info-sub, .info-text {
@@ -470,6 +477,81 @@ input[type="submit"]:hover {
 
 
 
+/* //////////// FOOTER ///////////// */
+.footer-container {
+    padding: 30px 0;
+    background-color: var(--lightGray);
+}
+.footer-fluid {
+    background-color: var(--lightGray);
+}
+
+.epic-link-holder-foot, .fb-share-holder-foot {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+}
+.epic-link-holder-foot:hover, .fb-share-holder-foot:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.epic-link-holder-foot {
+    float: left;
+    box-shadow: 0px 2px 5px rgba(45,45,45,.5);
+}
+
+.fortnite-logo-foot {
+    background: url('../img/fortnite.png') no-repeat center top;
+    background-size: contain;
+    height: 65px;
+    margin-bottom: 10px;
+}
+.epic-link-copy-foot, .fb-copy-foot {
+    font-size: .75em;
+    font-weight: 500;
+}
+
+
+/* fb */
+.fb-share-holder-foot {
+    float: right;
+    box-shadow: 0px 2px 5px rgba(45,45,45,.5);
+}
+.share-logo-foot::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    float: left;
+    background-image: url('../img/facebook-3-xxl.png');
+    background-size: contain;
+    height: 23px;
+    width: 23px;
+    left: 6px;
+    top: 6px;
+    
+}
+.share-logo-foot {
+    background-color: #2C4688;
+    height: 35px;
+    border-radius: 2px;
+    line-height: 35px;
+    margin: 12px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* small and below */
 @media screen and (max-width: 992px) {
     
@@ -484,6 +566,10 @@ input[type="submit"]:hover {
     top: 20px;
     left: 0px;
     } 
+    
+    .epic-link-holder-foot, .fb-share-holder-foot {
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -510,6 +596,9 @@ input[type="submit"]:hover {
     }
     .bg-images {
         margin-left: -120px;
+    }
+    .share-logo-foot {
+        margin: 20px 0;
     }
     
     

@@ -9,7 +9,7 @@ var ctaButton = document.getElementById('#cta');
 var toggle = document.getElementById('toggle');
 var square = 'red';
 
-$('#cta').click(function() {
+$('#cta, #ctaFooter').click(function() {
     $('#form-holder').addClass('form-open');
     $('#form-holder').addClass('form-open');
     $('#menuCircle').addClass('toggle-circle-active');

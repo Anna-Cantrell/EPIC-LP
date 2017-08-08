@@ -9,7 +9,7 @@ body {
     margin: 0;
     font-size: 16px;
     font-family: "museo-sans", "roboto", 'helvetica', 'arial', sans-serif !important;
-    background-color: rgba(35, 35, 35, 1) !important;
+    background-color: rgba(20, 20, 20, 1) !important;
 }
 body h1, p, div {
     color: white;
@@ -20,25 +20,90 @@ body h1, p, div {
     color: #C7161E;
 }
 
+.bg-images {
+    position: absolute;
+    width: 75vw;
+    height: 75vw;
+    overflow-x: hidden;
+    opacity: .35;
+    margin-left: -175px;
+    margin-top: 0px;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+.image-holder {
+    position: relative;
+    margin-top: 0;
+}
+.helmet {
+    position: absolute;
+    display: inline-block;
+    background-image: url('../img/helmet.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 75vw;
+    height: 75vw;
+    overflow: hidden;
+    margin-left: 75vw;
+    opacity: 0;
+}
+.sword {
+    position: absolute;
+    display: inline-block;
+    background-image: url('../img/sword.png');
+    background-size: 150%;
+    background-position: 70% -125px;
+    background-repeat: no-repeat;
+    width: 75vw;
+    height: 75vw;
+    margin-left: 75vw;
+    opacity: 0;
+}
+
+.img-active {
+    margin-left: 0px;
+    opacity: 1;
+}
+
 .landing-container {
-    background-color: rgba(35, 35, 35, 1);
-    height: 100vh;
+    background-color: rgba(20, 20, 20, 1);
+    min-height: 100vh;
 }
 
 .title-row {
     margin-top: 92px;
 }
-.title-holder h1::before {
-    width: 0;
-    height: 0;
-    border-left: 55px solid white;
-    border-right: 55px solid white;
-    border-top: 110px solid white;
+.square {
     position: absolute;
-    content: "";
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    background-color: white;
     top: 40px;
     left: 0px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
+.square:hover {
+    cursor: pointer;
+}
+
+.bluesquare {
+    background-color: #139DEA;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+.greensquare {
+    background-color: #61B535;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+.yellowsquare {
+    background-color: #FCB21E;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
 .title-holder h1 {
     text-transform: uppercase;
     font-weight: 900;
@@ -122,11 +187,14 @@ body h1, p, div {
     display: inline-block;
     vertical-align: top;
     height: 100vh;
+    max-height: 200vh;
     width: 340px;
     background-color: #139DEA;
     padding: 30px;
     padding-top: 60px;
+    overflow-y: scroll;
 }
+
 .intro-text-holder {
     text-align: center;
 }
@@ -234,7 +302,6 @@ input[type="submit"]:hover {
     border-radius: 2px;
     padding: 10px;
     text-align: center;
-    
 }
 
 .epic-link-holder {
@@ -344,11 +411,11 @@ input[type="submit"]:hover {
 
 
 .sub-fluid {
-    background-color: rgba(25, 25, 25, 1);
+    background-color: rgba(20, 20, 20, 1);
 }
 .lower-container {
-    background-color: rgba(25, 25, 25, 1);
-    height: 100vh;
+    background-color: rgba(20, 20, 20, 1);
+    min-height: 100vh;
 }
 .sub-head-row {
     margin-top: 75px;
@@ -370,24 +437,21 @@ input[type="submit"]:hover {
     font-style: italic;
     font-size: 1.125em;
 }
-.info-body {
-    font-weight: 300;
-    font-size: 1.125em;
-}
-
 
 
 
 /* !!!!!!!!!!! SVG !!!!!!!!!!!!! */
 .info-body {
     display: none;
+    font-weight: 300;
+    font-size: 1.125em;
 }
 .info-active {
     display: block;
 }
 
 .selector {
-    opacity: .3;
+    opacity: .6;
 }
 .room-active {
     opacity: 1 !important;
@@ -399,7 +463,7 @@ input[type="submit"]:hover {
 /* small and below */
 @media screen and (max-width: 992px) {
     
-    .title-holder h1::before {
+    .square {
     top: 20px;
     left: 0px;
     } 
@@ -416,17 +480,10 @@ input[type="submit"]:hover {
     .title-row {
         margin-top: 0px;
     }
-    .title-holder h1::before {
-        width: 0;
-        height: 0;
-        border-left: 0px;
-        border-right: 0px;
-        border-top: 0px;
-        position: absolute;
-        content: "";
-        top: 0px;
-        left: 0px;
+    .square {
+        display: none;
     }
+    
     .title-holder h1 {
         font-size: 7em;
         padding-left: 0px;

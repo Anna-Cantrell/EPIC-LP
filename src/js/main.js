@@ -7,6 +7,7 @@
 var clicks = 0;
 var ctaButton = document.getElementById('#cta');
 var toggle = document.getElementById('toggle');
+var square = 'red';
 
 $('#cta').click(function() {
     $('#form-holder').addClass('form-open');
@@ -39,7 +40,7 @@ $(".selector").mouseenter(function(e) {
   $(this).css('opacity','1');
 });
 $(".selector").mouseleave(function(e) {
-  $(this).css('opacity','.3');
+  $(this).css('opacity','.6');
   $('#info-box').html($(this).data('info'));
 });
 
@@ -52,4 +53,25 @@ $(".selector").click(function() {
 //    alert(info);
 });
 
+$('#square').click(function() {
+    if( square == 'red' ) {
+        $(this).addClass('bluesquare');
+        square = 'blue';
+        return
+    } if ( square == 'blue' ) {
+        $(this).removeClass('bluesquare');
+        $(this).addClass('greensquare');
+        square = 'green';
+        return
+    } if ( square == 'green' ) {
+        $(this).removeClass('greensquare');
+        $(this).addClass('yellowsquare');
+        square = 'yellow';
+        return
+    } if ( square == 'yellow' ) {
+        $(this).removeClass('yellowsquare');
+        square = 'red';
+        return
+    }
+});
 

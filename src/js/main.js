@@ -89,3 +89,28 @@ $('#square').click(function() {
     }
 });
 
+
+
+window.requestAnimationFrame = window.requestAnimationFrame
+ || window.mozRequestAnimationFrame
+ || window.webkitRequestAnimationFrame
+ || window.msRequestAnimationFrame
+ || function(f){setTimeout(f, 1000/60)} //fall back method, run roughly 60 times per second
+var imgSelector = document.getElementById('imgSelector');
+ var imgTop = parseInt($('#imgSelector').css('top'));
+
+
+        function parallaxImage() {
+
+            var scrolltop = window.pageYOffset;
+            
+            imgSelector.style.top = imgTop - (scrolltop * -.15) + 'px';
+
+            console.log(scrolltop);
+        }
+              
+          //tell java script that if 'scroll' happens in this window, then do this function
+          window.addEventListener('scroll', function() { 
+              requestAnimationFrame(parallaxImage) //call our parallax function on next available screen paint
+          }, false)
+

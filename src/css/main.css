@@ -68,7 +68,9 @@ text {
 .image-holder .var-yellow {
     background-position: -225vw;
 }
-
+#imgSelector {
+    top: 80px;
+}
 .bg-images {
     position: absolute;
     width: 75vw;
@@ -76,7 +78,6 @@ text {
     overflow-x: hidden;
     opacity: .35;
     margin-left: -175px;
-    margin-top: 0px;
     overflow-y: hidden;
     overflow-x: visible;
 }
@@ -191,6 +192,7 @@ text {
     font-weight: 100;
     font-size: .85em;
 }
+
 
 
 
@@ -507,6 +509,7 @@ input[type="submit"]:hover {
 }
 .footer-fluid {
     background-color: var(--lightGray);
+    margin-top: 50px;
 }
 
 .epic-link-holder-foot, .fb-share-holder-foot {

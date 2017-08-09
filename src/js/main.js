@@ -105,8 +105,6 @@ var imgSelector = document.getElementById('imgSelector');
             var scrolltop = window.pageYOffset;
             
             imgSelector.style.top = imgTop - (scrolltop * -.15) + 'px';
-
-            console.log(scrolltop);
         }
               
           //tell java script that if 'scroll' happens in this window, then do this function

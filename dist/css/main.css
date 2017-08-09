@@ -595,11 +595,15 @@ input[type="submit"]:hover {
     left: 0px;
     } 
     
-    .epic-link-holder-foot, .fb-share-holder-foot {
-        margin-top: 30px;
-    }
     .info-block {
         margin-bottom: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 765px) {
+     .epic-link-holder-foot, .fb-share-holder-foot {
+        margin-top: 30px;
     }
 }
 
@@ -686,6 +690,8 @@ input[type="submit"]:hover {
         border-color: white;   /**/
         margin-left: 75px;     /**/
     }
+    
+    
 }
 /*Iphone SE */
 @media screen and (max-width: 350px) {

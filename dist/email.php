@@ -10,7 +10,7 @@ if($_POST["name"] && $_POST["contact"]) {
 
     mail($recipient, $subject, $mailBody, "From: $name <$senderEmail>");
     
-    $url = 'http://localhost:8888?success=true';
+    $url = 'http://be-epic-raleigh.com/?success=true';
     header('Location: ' . $url, false, 302);
     exit;
     

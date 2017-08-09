@@ -1,8 +1,8 @@
 :root {
-    --mainRed: #C7161E;
-    --mainBlue: #139DEA;
-    --mainYellow: #FCB21E;
-    --mainGreen: #61B535;
+    --mainRed: #b32025;
+    --mainBlue: #5385c5;
+    --mainYellow: #faa71a;
+    --mainGreen: #376f3a;
     --focusBlue: #00AAEE;
     --focusRed: #CD3328;
     
@@ -27,12 +27,46 @@ body h1, p, div {
     color: white;
     font-size: 16px;
 }
+
 text {
     font-family: "museo-sans", "roboto", 'helvetica', 'arial', sans-serif !important;
 }
 
-.var-color {
+.var-red {
     color: var(--mainRed);
+}
+.var-blue {
+    color: var(--mainBlue);
+}
+.var-green {
+    color: var(--mainGreen);
+}
+.var-yellow {
+    color: var(--mainYellow);
+}
+.selector .var-red {
+    fill: var(--mainRed);
+}
+.selector .var-blue {
+    fill: var(--mainBlue);
+}
+.selector .var-green {
+    fill: var(--mainGreen);
+}
+.selector .var-yellow {
+    fill: var(--mainYellow);
+}
+.image-holder .var-red {
+    background-position: 0vw;
+}
+.image-holder .var-blue {
+    background-position: -75vw;
+}
+.image-holder .var-green {
+    background-position: -149vw;
+}
+.image-holder .var-yellow {
+    background-position: -225vw;
 }
 
 .bg-images {
@@ -50,35 +84,18 @@ text {
     position: relative;
     margin-top: 0;
 }
-.helmet {
+.moving-img {
     position: absolute;
     display: inline-block;
-    background-image: url('../img/helmet.png');
-    background-size: contain;
+    background-image: url('../img/bg-images.png');
+    background-size: 400%;
     background-repeat: no-repeat;
     width: 75vw;
     height: 75vw;
     overflow: hidden;
-    margin-left: 75vw;
-    opacity: 0;
-}
-.sword {
-    position: absolute;
-    display: inline-block;
-    background-image: url('../img/sword.png');
-    background-size: 150%;
-    background-position: 70% -125px;
-    background-repeat: no-repeat;
-    width: 75vw;
-    height: 75vw;
-    margin-left: 75vw;
-    opacity: 0;
+    transition: all 0.3s ease-in-out;
 }
 
-.img-active {
-    margin-left: 0px;
-    opacity: 1;
-}
 
 .landing-container {
     background-color: var(--darkGray);
@@ -114,12 +131,13 @@ text {
     background-color: var(--mainYellow);
     transform: rotate(90deg);
 }
-
-.title-holder h1 {
+.title-switch {
+}
+.red-title {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 8.75em;
-    padding-left: 100px;
+    margin-left: 100px;
     margin-bottom: 0px;
 }
 
@@ -203,6 +221,12 @@ text {
     padding: 30px;
     padding-top: 60px;
     overflow-y: scroll;
+}
+
+.success-message {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
 }
 
 .intro-text-holder {
@@ -424,7 +448,7 @@ input[type="submit"]:hover {
 }
 .lower-container {
     background-color: var(--darkGray);
-    min-height: 100vh;
+    min-height: 85vh;
 }
 .sub-head-row {
     margin-top: 75px;
@@ -442,7 +466,6 @@ input[type="submit"]:hover {
 }
 .info-head {
     font-weight: 700;
-    color: var(--mainRed);
     font-size: 1.5em;
     text-transform: uppercase;
 }
@@ -570,6 +593,9 @@ input[type="submit"]:hover {
     .epic-link-holder-foot, .fb-share-holder-foot {
         margin-top: 30px;
     }
+    .info-block {
+        margin-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -580,10 +606,13 @@ input[type="submit"]:hover {
         display: none;
     }
     
-    .title-holder h1 {
+    .title-switch h1 {
         font-size: 7em;
         padding-left: 0px;
         line-height: .9em;
+    }
+    .red-title {
+        margin-left: 0px;
     }
     .date-holder {
         text-transform: uppercase;

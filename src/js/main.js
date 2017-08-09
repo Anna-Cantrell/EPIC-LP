@@ -9,23 +9,29 @@ var ctaButton = document.getElementById('#cta');
 var toggle = document.getElementById('toggle');
 var square = 'red';
 
-$('#cta, #ctaFooter').click(function() {
+function menuOpen() {
     $('#form-holder').addClass('form-open');
     $('#form-holder').addClass('form-open');
     $('#menuCircle').addClass('toggle-circle-active');
     $('#line1').addClass('toggle-line1-active');
     $('#line2').addClass('toggle-line2-active');
     $('#line3').addClass('toggle-line3-active');
+}
+
+if (window.location.search === "?success=true") {
+    menuOpen();
+    clicks = 1;
+    $('<div class="success-message">You\'re all set! we\'ll see you there.</div>').insertAfter('#actual-form')
+}
+
+$('#cta, #ctaFooter').click(function() {
+    menuOpen();
     clicks = 1;
 });
 $('#toggle').click(function() {
     clicks ++;
     if (clicks % 2 != 0 ) {
-        $('#form-holder').addClass('form-open');
-        $('#menuCircle').addClass('toggle-circle-active');
-        $('#line1').addClass('toggle-line1-active');
-        $('#line2').addClass('toggle-line2-active');
-        $('#line3').addClass('toggle-line3-active');
+        menuOpen();
     } else {
         $('#form-holder').removeClass('form-open');
         $('#menuCircle').removeClass('toggle-circle-active');
@@ -56,20 +62,28 @@ $(".selector").click(function() {
 $('#square').click(function() {
     if( square == 'red' ) {
         $(this).addClass('bluesquare');
+        $('.var-color').removeClass('var-red');
+        $('.var-color').addClass('var-blue');
         square = 'blue';
         return
     } if ( square == 'blue' ) {
         $(this).removeClass('bluesquare');
         $(this).addClass('greensquare');
+        $('.var-color').removeClass('var-blue');
+        $('.var-color').addClass('var-green');
         square = 'green';
         return
     } if ( square == 'green' ) {
         $(this).removeClass('greensquare');
         $(this).addClass('yellowsquare');
+        $('.var-color').removeClass('var-green');
+        $('.var-color').addClass('var-yellow');
         square = 'yellow';
         return
     } if ( square == 'yellow' ) {
         $(this).removeClass('yellowsquare');
+        $('.var-color').removeClass('var-yellow');
+        $('.var-color').addClass('var-red');
         square = 'red';
         return
     }

@@ -29,17 +29,19 @@
           
           <!-- TITLE -->
         <div class="row title-row">
+            
             <div class="bg-images">
                 <div class="image-holder">
-                    <div class="helmet img-active"></div>
-                    <div class="sword"></div>
-                    <div class="ycontroller"></div>
-                    <div class="gcontroller"></div>
+                    <div id="images" class="moving-img var-color var-red"></div>
                 </div>
             </div>
-            <div class="col-md-9 col-lg-9">
+            
+            <div class="col-md-9 col-lg-12">
                 <div class="title-holder">
-                    <div id="square" class="square"></div><h1>be <span class="var-color">epic.</span></h1>
+                    <div id="square" class="square"></div>
+                    <div class="title-switch">
+                        <h1 class='red-title'>be <span class="var-color var-red">epic.</span></h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,7 +50,7 @@
         <div class="row">
             <div class="col-md-3 col-lg-3 col-sm-offset-6 col-md-offset-7 col-lg-offset-6">
                 <div class="date-holder">
-                    <span class="var-color">sat</span> 9.16.17
+                    <span class="var-color var-red">sat</span> 9.16.17
                 </div>
             </div>
         </div>
@@ -98,7 +100,7 @@
                       <div class="intro-secondary">This is one night only, don’t miss your opportunity!</div>
                   </div>
                   
-                  <form method="post" action="./email.php">
+                  <form method="post" action="email.php" id='actual-form'>
                       <br>
                         <input required='' type='text' name='name' />
                         <label alt='full name' placeholder='full name'></label>
@@ -148,7 +150,7 @@
 <svg x="0px" y="0px"
 	 viewBox="0 0 562 273.6" style="enable-background:new 0 0 562 273.6;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#C7161E;}
+    .var-red{fill:#C7161E;}
 	.st1{fill:none;}
 	.st2{fill:#FFFFFF;}
 	.st3{font-family: "museo-sans", "roboto", 'helvetica', 'arial', sans-serif; font-weight: 500;}
@@ -165,84 +167,84 @@
 </style>
 <g>
 	<g id="vr2_1" class="selector">
-		<polygon id="vr1" class="st0" points="205.2,236.6 137,236.6 137,229.9 129.3,229.9 129.3,190.2 135.5,190.2 205.2,190.2 
+		<polygon id="vr1" class="var-color var-red" points="205.2,236.6 137,236.6 137,229.9 129.3,229.9 129.3,190.2 135.5,190.2 205.2,190.2 
 			205.2,200.8 		"/>
 		<rect x="154.1" y="206.5" class="st1" width="29.9" height="15.8"/>
 		<text transform="matrix(1 0 0 1 154.0724 218.9153)" class="st2 st3 st4">VR</text>
 	</g>
 	<g id="vr1_1" class="selector">
-		<polygon id="vr2" class="st0" points="354.1,12.2 354.1,53.7 398.4,53.6 398.4,12.2 		"/>
+		<polygon id="vr2" class="var-color var-red" points="354.1,12.2 354.1,53.7 398.4,53.6 398.4,12.2 		"/>
 		<rect x="363" y="24.4" class="st1" width="29.9" height="15.8"/>
 		<text transform="matrix(1 0 0 1 363.0304 36.7869)" class="st2 st3 st4">VR</text>
 	</g>
 	<g id="food_1" class="selector">
-		<polygon id="food" class="st0" points="207.7,13.8 231.8,13.8 231.8,23.7 242,23.7 242,14.2 336.5,14.2 336.5,21.3 346.8,21.3 
+		<polygon id="food" class="var-color var-red" points="207.7,13.8 231.8,13.8 231.8,23.7 242,23.7 242,14.2 336.5,14.2 336.5,21.3 346.8,21.3 
 			346.8,12 351.9,12 351.6,73.4 207.7,73.4 		"/>
 		<rect x="257.7" y="31.2" class="st1" width="45.4" height="15.8"/>
 		<text transform="matrix(1 0 0 1 257.7135 43.5901)" class="st2 st3 st4">Food</text>
 	</g>
 	<g id="bar_1" class="selector">
-		<polygon id="bar" class="st0" points="401.1,12.3 550.5,12.3 550.5,57.4 466.2,57.4 466.2,82.5 430.7,82.5 402.1,82.5 		"/>
+		<polygon id="bar" class="var-color var-red" points="401.1,12.3 550.5,12.3 550.5,57.4 466.2,57.4 466.2,82.5 430.7,82.5 402.1,82.5 		"/>
 		<rect x="428.6" y="27.5" class="st1" width="91.3" height="15.8"/>
 		<text transform="matrix(1 0 0 1 428.5553 39.8826)" class="st2 st3 st4">Bar/Drinks</text>
 	</g>
 	<g id="garage_1" class="selector">
-		<polygon id="garage" class="st0" points="446.7,188.4 549.5,188.4 549.5,237.1 452,237.1 452,231.8 446.7,231.8 		"/>
+		<polygon id="garage" class="var-color var-red" points="446.7,188.4 549.5,188.4 549.5,237.1 452,237.1 452,231.8 446.7,231.8 		"/>
 		<rect x="464.4" y="206" class="st1" width="73.3" height="15.8"/>
 		<text transform="matrix(1 0 0 1 464.4205 218.3362)" class="st2 st3 st4">“Garage”</text>
 	</g>
 	<g id="laser" class="selector">
-		<path id="laser-tag" class="st0" d="M24.1,35.4v29.4h6.2v7.7H22c0,0-18.5,24.9-17.5,50c0.9,23,9.5,45.1,17,56.8h6.7v78.4h61.9
+		<path id="laser-tag" class="var-color var-red" d="M24.1,35.4v29.4h6.2v7.7H22c0,0-18.5,24.9-17.5,50c0.9,23,9.5,45.1,17,56.8h6.7v78.4h61.9
 			V70.2H69.8V35.4H24.1z"/>
 		<text transform="matrix(1 0 0 1 19.9269 125.219)"><tspan x="0" y="0" class="st2 st3 st5">Laser</tspan><tspan x="0" y="26.8" class="st2 st3 st5">Tag</tspan></text>
 	</g>
 	<g id="fortnite_1" class="selector">
-		<polygon id="fortnite" class="st0" points="90.8,87.5 91.5,160.1 170.4,160.1 184.5,77.9 135.9,64.6 135.9,72.6 105.2,72.6 
+		<polygon id="fortnite" class="var-color var-red" points="90.8,87.5 91.5,160.1 170.4,160.1 184.5,77.9 135.9,64.6 135.9,72.6 105.2,72.6 
 			105.2,87.5 		"/>
 		<rect x="93.8" y="92.1" class="st1" width="71.7" height="36.2"/>
 		<text transform="matrix(1 0 0 1 93.8024 98.5027)"><tspan x="0" y="0" class="st2 st3 st6">Fortnite/</tspan><tspan x="0" y="10.8" class="st2 st3 st6">Laser Tag</tspan><tspan x="0" y="21.6" class="st2 st3 st6">Waiting Area</tspan></text>
 	</g>
 	<g id="insta_1" class="selector">
-		<polygon id="insta" class="st0" points="135.9,64.6 131.4,64.6 131.4,21.4 137.6,21.4 137.6,13.9 161.6,13.9 161.6,21.4 
+		<polygon id="insta" class="var-color var-red" points="135.9,64.6 131.4,64.6 131.4,21.4 137.6,21.4 137.6,13.9 161.6,13.9 161.6,21.4 
 			168.3,21.4 168.3,14.7 204.8,14.7 204.8,53.3 184.5,77.9 		"/>
 		<text transform="matrix(1 0 0 1 142.7477 41.0701)"><tspan x="0" y="0" class="st2 st3 st7">Instagram </tspan><tspan x="2.7" y="12.4" class="st2 st3 st7">Backdrop</tspan></text>
 	</g>
 	<g id="projector_1" class="selector">
-		<rect id="projector" x="342.4" y="127.7" class="st0" width="77.4" height="42.3"/>
+		<rect id="projector" x="342.4" y="127.7" class="var-color var-red" width="77.4" height="42.3"/>
 		<rect x="353.7" y="136" class="st1" width="55.2" height="25.3"/>
 		<text transform="matrix(1 0 0 1 359.4655 143.2893)"><tspan x="0" y="0" class="st2 st3 st7">Game on </tspan><tspan x="-0.4" y="12.4" class="st2 st3 st7">Projector</tspan></text>
 	</g>
 	<g id="stations" class="selector">
 		<g id="game-stations">
-			<rect x="278.7" y="106.1" class="st0" width="43.3" height="5.2"/>
-			<rect x="266.4" y="116.7" class="st0" width="67.9" height="13.8"/>
-			<rect x="277.6" y="136.5" class="st0" width="45.4" height="5.7"/>
+			<rect x="278.7" y="106.1" class="var-color var-red" width="43.3" height="5.2"/>
+			<rect x="266.4" y="116.7" class="var-color var-red" width="67.9" height="13.8"/>
+			<rect x="277.6" y="136.5" class="var-color var-red" width="45.4" height="5.7"/>
 		</g>
 		<rect x="263.2" y="120" class="st1" width="74.3" height="13.4"/>
 		<text transform="matrix(1 0 0 1 269.2341 126.5334)"><tspan x="0" y="0" class="st2 st3 st8">Game</tspan><tspan x="25.6" y="0" class="st2 st3 st9"> </tspan><tspan x="27.7" y="0" class="st2 st3 st8">Stations</tspan></text>
 	</g>
 	<g id="classic" class="selector">
-		<rect id="classic-arcade" x="209.1" y="95.7" class="st0" width="33.8" height="62.1"/>
+		<rect id="classic-arcade" x="209.1" y="95.7" class="var-color var-red" width="33.8" height="62.1"/>
 		<rect x="206.8" y="112.1" class="st1" width="39.6" height="41.1"/>
 		<text transform="matrix(1 0 0 1 213.3376 117.9667)"><tspan x="0" y="0" class="st2 st3 st9">Classic</tspan><tspan x="-0.1" y="9.9" class="st2 st3 st9">Arcade</tspan><tspan x="0" y="19.8" class="st2 st3 st9">Games</tspan></text>
 	</g>
 	<g id="gr4_1" class="selector">
-		<rect id="gr4" x="354.6" y="203.9" class="st0" width="37.9" height="33"/>
+		<rect id="gr4" x="354.6" y="203.9" class="var-color var-red" width="37.9" height="33"/>
 		<rect x="354.9" y="208.2" class="st1" width="53.4" height="34.9"/>
 		<text transform="matrix(1 0 0 1 354.9431 213.1727)"><tspan x="0" y="0" class="st2 st3 st10">Gameroom </tspan><tspan x="0" y="8.4" class="st2 st3 st10">4</tspan></text>
 	</g>
 	<g id="gr3_1" class="selector">
-		<rect id="gr3" x="304.6" y="203.9" class="st0" width="47.5" height="33"/>
+		<rect id="gr3" x="304.6" y="203.9" class="var-color var-red" width="47.5" height="33"/>
 		<rect x="306.3" y="208.2" class="st1" width="53.4" height="34.9"/>
 		<text transform="matrix(1 0 0 1 306.2508 213.1727)"><tspan x="0" y="0" class="st2 st3 st10">Gameroom </tspan><tspan x="0" y="8.4" class="st2 st3 st10">3</tspan></text>
 	</g>
 	<g id="gr2_1" class="selector">
-		<rect id="gr2" x="262.1" y="203.9" class="st0" width="38.6" height="33.4"/>
+		<rect id="gr2" x="262.1" y="203.9" class="var-color var-red" width="38.6" height="33.4"/>
 		<rect x="262.8" y="208.2" class="st1" width="53.4" height="34.9"/>
 		<text transform="matrix(1 0 0 1 262.8412 213.1727)"><tspan x="0" y="0" class="st2 st3 st10">Gameroom </tspan><tspan x="0" y="8.4" class="st2 st3 st10">2</tspan></text>
 	</g>
 	<g id="gr1_1" class="selector">
-		<rect id="gr1" x="208" y="203.9" class="st0" width="51" height="33"/>
+		<rect id="gr1" x="208" y="203.9" class="var-color var-red" width="51" height="33"/>
 		<rect x="210.2" y="208.2" class="st1" width="53.4" height="34.9"/>
 		<text transform="matrix(1 0 0 1 210.2104 213.1727)"><tspan x="0" y="0" class="st2 st3 st10">Gameroom </tspan><tspan x="0" y="8.4" class="st2 st3 st10">1</tspan></text>
 	</g>
@@ -287,13 +289,13 @@
                   <div class="info-block">
                       
                       <div class="default-text info-body info-active">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               Select a room to learn more
                           </div>
                       </div>
                       
                       <div class="laser1 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               Laser tag
                           </div>
                           <div class="info-sub">
@@ -305,7 +307,7 @@
                       </div>
                       
                       <div class="fortnite_11 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               fortnite
                           </div>
                           <div class="info-sub">
@@ -317,7 +319,7 @@
                       </div>
                       
                       <div class="insta_11 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               Instagram backdrop
                           </div>
                           <div class="info-sub">
@@ -329,7 +331,7 @@
                       </div>
                       
                       <div class="food_11 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               Food
                           </div>
                           <div class="info-sub">
@@ -341,7 +343,7 @@
                       </div>
                       
                       <div class="vr1_11 vr2_11 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               Virtual Reality
                           </div>
                           <div class="info-sub">
@@ -353,7 +355,7 @@
                       </div>
                       
                       <div class="bar_11 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               Bar/drinks
                           </div>
                           <div class="info-sub">
@@ -365,7 +367,7 @@
                       </div>
                       
                       <div class="classic1 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               Classic Arcade Games
                           </div>
                           <div class="info-sub">
@@ -377,7 +379,7 @@
                       </div>
                       
                       <div class="stations1 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               Game stations
                           </div>
                           <div class="info-sub">
@@ -389,7 +391,7 @@
                       </div>
                       
                       <div class="projector_11 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               Game on projector
                           </div>
                           <div class="info-sub">
@@ -401,7 +403,7 @@
                       </div>
                       
                       <div class="gr1_11 gr2_11 gr3_11 gr4_11 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               Gamerooms
                           </div>
                           <div class="info-sub">
@@ -413,7 +415,7 @@
                       </div>
                       
                       <div class="garage_11 info-body">
-                          <div class="info-head">
+                          <div class="var-color info-head var-red">
                               The 'Garage'
                           </div>
                           <div class="info-sub">

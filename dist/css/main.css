@@ -178,8 +178,13 @@ text {
 
 /* LOCATION */
 .row-location {
+    position: absolute;
+    float: right;
     text-align: right;
     margin-top: 10px;
+    width: 100%;
+    left: 0;
+    bottom: 30px;
 }
 .location-holder {
     font-weight: 100;
@@ -583,7 +588,17 @@ input[type="submit"]:hover {
 
 
 
-/* small and below */
+/* wall display */
+@media screen and (min-width: 1300px) {
+    .bg-images {
+    margin-left: -500px;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+    
+}
+
+
 @media screen and (max-width: 992px) {
     
     .square {
@@ -608,6 +623,14 @@ input[type="submit"]:hover {
      .epic-link-holder-foot, .fb-share-holder-foot {
         margin-top: 30px;
     }
+    .row-location {
+    position: relative;
+    float: none;
+    text-align: right;
+    margin-top: 10px;
+    width: 100%;
+    bottom: 0px;
+}
 }
 
 @media screen and (max-width: 500px) {

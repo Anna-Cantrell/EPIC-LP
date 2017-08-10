@@ -10,9 +10,15 @@ if($_POST["name"] && $_POST["contact"]) {
 
     mail($recipient, $subject, $mailBody, "From: $name <$senderEmail>");
     
+    if ( preg_match( "/[\r\n]/", $name ) || preg_match( "/[\r\n]/", $senderEmail ) ) {
+        $url = 'http://be-epic-raleigh.com/?success=false';
+        header('Location: ' . $url, false, 302);
+        exit;
+    } else {
+    
     $url = 'http://be-epic-raleigh.com/?success=true';
     header('Location: ' . $url, false, 302);
-    exit;
+    exit; }
     
 }
 

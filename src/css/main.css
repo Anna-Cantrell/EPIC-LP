@@ -235,6 +235,11 @@ text {
     color: white;
     margin-top: 20px;
 }
+.fail-message {
+    text-align: center;
+    color: var(--mainRed);
+    margin-top: 20px;
+}
 
 .intro-text-holder {
     text-align: center;

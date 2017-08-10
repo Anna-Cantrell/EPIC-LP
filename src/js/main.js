@@ -23,6 +23,11 @@ if (window.location.search === "?success=true") {
     clicks = 1;
     $('<div class="success-message">You\'re all set! we\'ll see you there.</div>').insertAfter('#actual-form')
 }
+if (window.location.search === "?success=false") {
+    menuOpen();
+    clicks = 1;
+    $('<div class="fail-message">Sorry! Something went wrong, try again.</div>').insertAfter('#actual-form')
+}
 
 $('#cta, #ctaFooter').click(function() {
     menuOpen();

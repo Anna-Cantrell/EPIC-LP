@@ -5,7 +5,7 @@
 /* Large devices (large desktops, 1200px and up) */
 
 
-body { 
+body {
     margin: 0;
     font-size: 16px;
     font-family: "museo-sans", "roboto", 'helvetica', 'arial', sans-serif !important;
@@ -197,8 +197,6 @@ text {
 
 
 
-
-
 /* FORM CONTAINER */
 
 .row-form {
@@ -250,7 +248,7 @@ text {
 }
 
 
-/* ACTUAL FORM */ 
+/* ACTUAL FORM */
 form {
     background-color: #5385c5;
     color: white;
@@ -381,7 +379,7 @@ input[type="submit"]:hover {
     width: 23px;
     left: 6px;
     top: 6px;
-    
+
 }
 .share-logo {
     background-color: #2C4688;
@@ -573,7 +571,7 @@ input[type="submit"]:hover {
     width: 23px;
     left: 6px;
     top: 6px;
-    
+
 }
 .share-logo-foot {
     background-color: #2C4688;
@@ -600,28 +598,28 @@ input[type="submit"]:hover {
     overflow-y: hidden;
     overflow-x: visible;
 }
-    
+
 }
 
 
 @media screen and (max-width: 992px) {
-    
+
     .square {
     top: 20px;
     left: 0px;
-    } 
+    }
     .date-holder {
     text-align: right;
     }
     .title-holder h1::before {
     top: 20px;
     left: 0px;
-    } 
-    
+    }
+
     .info-block {
         margin-bottom: 50px;
     }
-    
+
 }
 
 @media screen and (max-width: 765px) {
@@ -645,7 +643,7 @@ input[type="submit"]:hover {
     .square {
         display: none;
     }
-    
+
     .title-switch h1 {
         font-size: 7em;
         padding-left: 0px;
@@ -669,12 +667,12 @@ input[type="submit"]:hover {
     .share-logo-foot {
         margin: 20px 0;
     }
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
     .row-form {
         right: -100vw; /**/
     }
@@ -694,7 +692,7 @@ input[type="submit"]:hover {
     }
 
 
-    /* ACTUAL FORM */ 
+    /* ACTUAL FORM */
 
     .sub-cta-holder {
         margin-top: 20px;  /**/
@@ -721,8 +719,8 @@ input[type="submit"]:hover {
         border-color: white;   /**/
         margin-left: 75px;     /**/
     }
-    
-    
+
+
 }
 /*Iphone SE */
 @media screen and (max-width: 350px) {
